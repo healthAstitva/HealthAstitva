@@ -20,6 +20,11 @@
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+<<<<<<< HEAD
+=======
+    "tailwind-scrollbar": "^3.0.5",
+    "tailwindcss": "3.3.3",
+>>>>>>> d1d1e932f8cc5db22a95c07922cb52d776938b4b
     "typescript": "5.2.2"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",

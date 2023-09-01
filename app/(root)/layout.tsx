@@ -3,6 +3,7 @@ import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import LeftSidebar from '@/components/shared/LeftSidebar'
+import BottomSidebar from '@/components/shared/BottomSidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,8 @@ export default function RootLayout({
 
         <LeftSidebar />
         {children}
+
+        <BottomSidebar/>
         </body>
     </html>
   )

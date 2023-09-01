@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 244, 244, 240;
+  --foreground-rgb: 0f, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -41,6 +41,22 @@
   }
 }
 
+@layer components {
+
+  
+
+  .leftsidebar{
+    @apply sticky left-0 top-0 w-fit h-screen text-black flex flex-col pt-24 z-20 font-bold text-lg px-12 gap-6 border-r-2 border-r-black  bg-white
+  }
+  
+
+  .leftsidebar_link{
+    @apply flex gap-3 border-b-2 p-5 border-b-gray-400
+  }
+
+
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -49,4 +65,33 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.loginbg{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/loginbg.svg");
+  background-repeat: no-repeat;
+  background-size: 100% ;
+}
+
+.field{
+  /* background: transparent; */
+  background: rgba(191, 223, 195, 0.3);
+  color:white ;
+  
+}
+
+.btn{
+            background-color: rgba(191, 223, 195, 0.3);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.4s, color 0.3s; /* Add transition for background color and text color */
+        }
+
+.btn:hover{
+  background-color: #2289ce; /* Change the background color on hover */
+  color: #fff; 
 }

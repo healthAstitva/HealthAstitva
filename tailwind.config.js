@@ -14,6 +14,11 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+      extend:{
+        backgroundImage:{
+          'bgsidebar': "url('./public/assets/bgsidebar.png')",
+        }
+      }
     },
     extend: {
       colors: {
